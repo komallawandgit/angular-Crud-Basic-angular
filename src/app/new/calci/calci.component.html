@@ -1,0 +1,52 @@
+
+<h1>simple calculator</h1>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">calculator</h3>
+        
+      </div>
+  <div class="panel-body">
+    <div class="form-group d-flex flex-row">
+
+<div class="form-group">
+  <div class="row">
+    <div class= "col-md-6 bgchange">
+      <h1>+-*/</h1>
+       <h3><button class="btn-primary" (click)="AdditionFunction()">Addition</button></h3> 
+      <h3> <button class="btn-primary" (click)="SubstractionFunction()">subtraction</button></h3> 
+    <h3> <button class="btn-primary" (click)="MultiplicationFunction()" >multiplication</button></h3> 
+  <h3> <button class="btn-primary" (click)="divFunction()">division</button></h3> 
+
+
+    </div>
+
+      <div class= "col-md-6 bgchange2">
+        <h1>simple calci</h1>
+        <input type="text"  name="num1" [(ngModel)]="num1" class="form-control">
+        <input type="text"  name="num2" [(ngModel)]="num2" class="form-control">
+        <h2>:result:</h2>
+        <h1><input type="text"  name="result" [(ngModel)]="result" class="form-control" value="result" placeholder="result" readonly></h1>
+ </div>
+</div>
+
+
+<div claa="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-3">
+  </div>
+
+</div>
+
+  
+    </div>
+
+
+    </div>
+  </div>
+</div>

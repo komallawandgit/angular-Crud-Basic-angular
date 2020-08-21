@@ -1,0 +1,66 @@
+<h2>Student Details</h2>
+<div class="panel panel-primary" *ngFor="let student of  studdata">
+	<div class="panel-heading">
+		<h3 class="panel-title">{{student.id}}</h3>
+		
+	</div>
+	<div class="panel-body">
+	<h3>{{student.name}}</h3>
+	<h3>{{student.email}}</h3>
+	<h3>{{student.phoneNumber}}</h3>
+	<h3>{{student.department}}</h3>
+
+
+	 <button type="submit" class="btn btn-primary  margin2" (click)="editForm(student.id)">Edit Details</button>
+	  <button type="submit" class="btn btn-primary margin2" (click)="DeleteStudent(student.id)">delete Details</button>
+
+
+
+</div>
+</div>p[[[[[[[;lk.]]]]]]]
+
+
+<form #studentForm="ngForm" (ngSubmit)="SaveStudent(studentForm.value)">
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h3 class="panel-title">ADD STUDENT DATA</h3>
+	</div>
+	<div class="panel-body">
+		 <div class="form-group">
+    		<label for="id">id</label>
+   			 <input type="text"  name="id" [(ngModel)]="id" class="form-control">
+		</div>
+
+		 <div class="form-group">
+    		<label for="name">name</label>
+   			 <input type="text"  name="name" [(ngModel)]="name" class="form-control">
+		</div>
+
+
+		 <div class="form-group">
+    		<label for="email">emailId</label>
+   			 <input type="text"  name="email" [(ngModel)]="email" class="form-control">
+		</div>
+
+		 <div class="form-group">
+    		<label for="phoneNumber">phoneNumber</label>
+   			 <input type="text"  name="phoneNumber" [(ngModel)]="phoneNumber" class="form-control">
+		</div>
+
+		 <div class="form-group">
+    		<label for="department">department</label>
+   			 <input type="text"  name="department" [(ngModel)]="department" class="form-control">
+		</div>
+
+
+
+
+	 <button type="submit" class="btn btn-primary margin5">SAVE STUDENT</button>
+
+
+</div>
+</div>
+</form>
+
+{{studentForm.value|json}}
+

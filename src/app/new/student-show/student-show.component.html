@@ -1,0 +1,17 @@
+<h2>Student Details</h2>
+	<h1> welcome to student new details</h1>
+
+	
+
+
+
+<div class="panel panel-primary" *ngFor="let student of  studdata">
+	<div class="panel-heading">
+			<app-student-list [studobject] = "student" (idEdit)="handleEdit($event)" (id)="handleDelete($event)"></app-student-list>
+	</div>
+
+</div>
+
+
+<app-student-add [studSave1] = "studSave"  (studentForm)="handleSave($event)"></app-student-add>
+

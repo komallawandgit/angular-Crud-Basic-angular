@@ -4,7 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --output-hashing=none",
+    "package": "cat ./dist/PerosnalDetails/main.js ./dist/PerosnalDetails/polyfills.js ./dist/PerosnalDetails/runtime.js ./dist/PerosnalDetails/scripts.js>customButton.js",
+    "package2":"cat ./dist/PerosnalDetails/main.js ./dist/PerosnalDetails/polyfills.js ./dist/PerosnalDetails/runtime.js ./dist/PerosnalDetails/scripts.js>TextField.js",
+    "package3":"cat ./dist/PerosnalDetails/main.js ./dist/PerosnalDetails/polyfills.js ./dist/PerosnalDetails/runtime.js ./dist/PerosnalDetails/scripts.js>Checkbox.js",
+  
+      
+                
+                
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -15,13 +22,18 @@
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
     "@angular/core": "^6.1.0",
+    "@angular/elements": "^6.1.10",
     "@angular/forms": "^6.1.0",
     "@angular/http": "^6.1.0",
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@webcomponents/custom-elements": "^1.4.1",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
-    "rxjs": "^6.0.0",
+    "document-register-element": "^1.8.1",
+    "jquery": "^3.4.1",
+    "rxjs": "6.0.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

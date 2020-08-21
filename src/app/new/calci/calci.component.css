@@ -1,0 +1,29 @@
+h1{
+    background-color:dimgrey;
+    border: 2px solid aquamarine;
+}
+h2{
+    background-color: rgb(201, 67, 18);
+}
+.bgchange{
+  background-color: lightsalmon;
+}
+.bgchange2{
+    padding-top: 4%;
+    padding-bottom: 3%;
+    color: yellowgreen;
+border: 5px solid yellow;
+}
+button{
+    padding-top: 2%;
+   
+    border:5px solid yellow;
+}
+input{
+    padding: 1%;
+    border: 1px solid violet ;
+}
+.row{
+    background-color: burlywood;
+    border: 2px solid violet;
+}

@@ -1,0 +1,11 @@
+<div class="panel-body">
+	<h3 class="panel-title">{{stud.id}}</h3>
+	<h3>{{stud.name}}</h3>
+	<h3>{{stud.email}}</h3>
+	<h3>{{stud.phoneNumber}}</h3>
+	<h3>{{stud.department}}</h3>
+
+
+	 <button type="submit" class="btn btn-primary  margin2" (click)="editForm(stud.id)">Edit Details</button>
+	  <button type="submit" class="btn btn-primary margin2" (click)="DeleteStudent(stud.id)">delete Details</button>
+</div>
